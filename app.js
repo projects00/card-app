@@ -1288,7 +1288,7 @@ app.put('/updatedash/dashimage', (req, res) => {
         if (err) {
             connection.release();
         }
-        let query = "update defaultsetting set imageId = ?, ,message = ?, fromname = ? ,toname = ?,intoText=? where id = 1"
+        let query = "update defaultsetting set imageId = ?,message = ?, fromname = ? ,toname = ?,intoText=? where id = 1"
 
         connection.query(query, [req.body.imageid, req.body.message, req.body.fromname, req.body.toname, req.body.intotext], (err) => {
             if (err) {
