@@ -22,6 +22,7 @@ var options = {
     database: 'loaqey4v_testnkdb'
 
 };
+var test="ss";
 var sessionStore = new MySQLStore(options);
 const connect = mysql.createPool({
     host: 'mysql7002.site4now.net',
